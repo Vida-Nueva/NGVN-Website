@@ -17,7 +17,8 @@
 //= require jquery-ui
 //= require popper
 //= require bootstrap-sprockets
-//= require scrollreveal
-//= require jquery.magnific-popup
-//= require creative
+//= require scrollreveal.min
+//= require jquery.magnific-popup.min
+//= require js/swiper.min
+//= require creative.js.erb
 //= require_tree .

@@ -20,6 +20,28 @@ $(function() {
     $('.navbar-collapse').collapse('hide');
   });
 
+  window.historySwiper = new Swiper ('.timeline .swiper-container', {
+      direction: 'vertical',
+      loop: false,
+      speed: 1600,
+      pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+          renderBullet: function (index, className) {
+              var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+              return '<span class="' + className + '">' + year + '</span>';
+          },
+      },
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      breakpoints: {
+          768: {
+              direction: 'horizontal',
+          }
+      }
+  });
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
@@ -38,6 +60,11 @@ $(function() {
     duration: 400,
     scale: 0.1,
     distance: '0px'
+  }, 200);
+  sr.reveal('.sr-history', {
+      duration: 400,
+      scale: 0.1,
+      distance: '0px'
   }, 200);
   sr.reveal('.sr-button', {
     duration: 1000,
