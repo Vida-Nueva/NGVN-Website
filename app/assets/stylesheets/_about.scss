@@ -47,7 +47,7 @@
       right: 50%;
       top: 13%;
       transform: translate(50%, 0);
-      font-size: 16px;
+      font-size: 14px;
       z-index: 2;
     }
 
@@ -101,7 +101,7 @@
   }
 
   .swiper-pagination {
-    right: 15%!important;
+    right: 5%!important;
     height: 100%;
     display: none;
     flex-direction: column;
@@ -164,14 +164,14 @@
   }
 
   .swiper-button-prev {
-    left: 8%;
+    left: 15%;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
 
     &:hover { transform: translateX(-3px); }
   }
 
   .swiper-button-next {
-    right: 8%;
+    right: 15%;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
 
     &:hover { transform: translateX(3px); }
@@ -192,7 +192,7 @@
         top: 50%;
         transform: translateY(-50%);
         width: 60%;
-        font-size: 11px;
+        font-size: 14px;
         text-align: right;
       }
 
@@ -212,7 +212,7 @@
     .swiper-button-prev {
       top: 15%;
       left: auto;
-      right: 15%;
+      right: 10%;
       transform: rotate(90deg) translate(0, 10px);
 
       &:hover { transform: rotate(90deg) translate(-3px, 10px); }
@@ -221,7 +221,7 @@
     .swiper-button-next {
       top: auto;
       bottom: 15%;
-      right: 15%;
+      right: 10%;
       transform: rotate(90deg) translate(0, 10px);
 
       &:hover { transform: rotate(90deg) translate(3px, 10px); }
