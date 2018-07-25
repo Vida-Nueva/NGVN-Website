@@ -8,7 +8,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 57)
+          scrollTop: (target.offset().top - 80)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -47,7 +47,7 @@ $(function() {
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 57
+    offset: 80
   });
 
   // Scroll reveal calls
@@ -62,21 +62,20 @@ $(function() {
     duration: 400,
     scale: 0.1,
     distance: '0px'
-  }, 200);
+  },150);
   sr.reveal('.sr-history', {
-      duration: 400,
-      scale: 0.1,
-      distance: '0px'
-  }, 200);
+      duration: 1000,
+      delay: 100
+  });
   sr.reveal('.sr-button', {
     duration: 1000,
-    delay: 200
+    delay: 100
   });
   sr.reveal('.sr-contact', {
     duration: 600,
     scale: 0.3,
     distance: '0px'
-  }, 300);
+  });
 
   // Magnific popup calls
   $('.popup-gallery').magnificPopup({

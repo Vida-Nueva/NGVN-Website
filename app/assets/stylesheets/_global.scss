@@ -77,3 +77,15 @@ img::-moz-selection {
   color: $white;
   background: transparent;
 }
+
+.vl {
+  border-left: 6px solid $white;
+  height: 500px;
+
+  &-primary {
+    border-left-color: $primary;
+  }
+  &-dark {
+    border-left-color: $gray-900;
+  }
+}

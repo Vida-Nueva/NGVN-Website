@@ -1,0 +1,21 @@
+form {
+  background-color: $primary;
+  color: $white;
+  border-radius: 25px;
+  padding: 15px;
+
+  .form-group > .form-text {
+    color: $white !important;
+    &.text-muted {
+      color: $gray-400 !important;
+    }
+  }
+
+  > .form-row {
+    margin-bottom: 5px;
+  }
+
+  &.form-dark {
+    background-color: $gray-900;
+  }
+}

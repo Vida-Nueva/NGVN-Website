@@ -1,0 +1,19 @@
+#serve-sponser {
+  color: $white;
+  background-color: $gray-900;
+  border-radius: 25px;
+  padding:20px;
+  text-align: center;
+
+  >.row {
+    .left-serve-sponsor {
+      border-right: 2px solid white;
+      text-align: center;
+    }
+
+    .right-serve-sponsor {
+      border-left: 2px solid white;
+      text-align: center
+    }
+  }
+}
